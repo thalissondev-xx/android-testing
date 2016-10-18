@@ -18,6 +18,7 @@ public class CalculatorTest {
 
     @Test
     public void sum() throws Exception {
+        //assertEquals(5d, calculator.sum(1d, 5d), 0);
         assertEquals(6d, calculator.sum(1d, 5d), 0);
     }
 
