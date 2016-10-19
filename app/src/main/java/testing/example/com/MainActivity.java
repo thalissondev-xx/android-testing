@@ -1,5 +1,6 @@
 package testing.example.com;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("Hello, " + editText.getText().toString() + "!");
     }
 
-//    public void clearWelcome(View v) {
-//        ((TextView) findViewById(R.id.textView)).setText("");
-//    }
+    public void navigateToPrintName(View v) {
+        startActivity(new Intent(this, PrintName.class));
+    }
 }
