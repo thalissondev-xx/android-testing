@@ -33,9 +33,17 @@ public class MainActivityInstrumentationTest {
     public void sayHello(){
         onView(withId(R.id.editText)).perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard()); //line 1
 
-        onView(withText("Say hello!")).perform(click()); //line 2
+        // withText work
+        onView(withId(R.id.btnSayHello)).perform(click()); //line 2
 
         String expectedText = "Hello, " + STRING_TO_BE_TYPED + "!";
         onView(withId(R.id.textView)).check(matches(withText(expectedText))); //line 3
     }
+
+//    @Test
+//    public void clearWelcome(){
+//        onView(withText("Clear welcome!")).perform(click());
+//        String expectedText = "";
+//        onView(withId(R.id.textView)).check(matches(withText(expectedText)));
+//    }
 }

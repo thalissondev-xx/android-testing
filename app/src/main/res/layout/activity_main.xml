@@ -26,6 +26,13 @@
         android:layout_height="wrap_content"
         android:text="Say hello!"
         android:layout_below="@+id/editText"
+        android:id="@+id/btnSayHello"
         android:onClick="sayHello"/>
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Clear welcome!"-->
+        <!--android:layout_below="@+id/editText"-->
+        <!--android:onClick="clearWelcome"/>-->
 
 </RelativeLayout>
